@@ -16,7 +16,7 @@ def notebook_to_html(notebook_path):
 
 @app.route('/')
 def jupyter_in_flask():
-    notebook_path = 'templates/Lip-Model.ipynb'
+    notebook_path = 'templates\Lip-Model.ipynb'
     jupyter_html = notebook_to_html(notebook_path)
     return render_template('jupiter_template.html', jupyter_html=jupyter_html)
 
